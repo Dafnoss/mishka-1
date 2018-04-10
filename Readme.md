@@ -1,5 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogatnev-nikita/mishka.svg)](https://greenkeeper.io/)
+
 * Студент: [Мария Машнина](https://up.htmlacademy.ru/adaptive/14/user/111572).
 * Наставник: `Неизвестно`.
 
