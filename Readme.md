@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Мария Машнина](https://up.htmlacademy.ru/adaptive/14/user/111572).
-* Наставник: `Неизвестно`.
+* Студент: [Алексей Комков].
+* Наставник: [Никита Рогатнев].
 
 ---
 
