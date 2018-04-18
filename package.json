@@ -1,16 +1,25 @@
 {
   "name": "mishka",
-  "version": "1.0.0",
-  "description": "",
+  "version": "14.0.0",
+  "private": true,
+  "description": "Личный проект «Мишка» от HTML Academy",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
     "start": "npm run build && gulp serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run editorconfig",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint ."
+  },
+  "engines": {
+    "node": "8.11"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "stylelint": "9.2.x",
+    "stylelint-config-htmlacademy": "0.1.x",
     "autoprefixer": "^8.2.0",
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
@@ -26,5 +35,9 @@
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1"
-  }
+  },
+  "editorconfig-cli": [
+    "*.json",
+    "source/*.html"
+  ]
 }

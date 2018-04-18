@@ -310,6 +310,9 @@ template {
   font-weight: normal;
   src: url('../../fonts/OpenSans-Regular.woff2') format('woff2');
 }
+body {
+  background-color: dodgerblue;
+}
 .page-header {
   font-family: 'Open Sans', 'Arial', serif;
   font-weight: bold;
