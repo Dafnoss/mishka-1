@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Проект Мишка</title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="page-header">
+    <nav class="page-header__nav">
+        <div class="page-header__logo">
+            <img src="#" alt="logo">
+        </div>
+        <ul class="page-header__list">
+            <li class="page-header__list-item">
+                <a>Каталог товаров</a>
+            </li>
+            <li class="page-header__list-item">
+                <a>Вязание на заказ</a>
+            </li>
+            <li class="page-header__list-item page-header__list-item--secondary">
+                <a>Новые поступления</a>
+            </li>
+            <li class="page-header__list-item page-header__list-item--secondary">
+                <a>Pаспродажа</a>
+            </li>
+        </ul>
+        <ul class="page-header__order">
+            <li class="page-header__order-item">Поиск по сайту</li>
+            <li class="page-header__order-item">Корзина: пока пуста</li>
+        </ul>
+        <span class="page_header__details">Бесплатная доставка по Росиии</span>
+    </nav>
+</header>
+<main class="page-content">
+    <section class="intro intro--form">
+        <h1 class="intro__header general-title">
+            Вязание на заказ
+        </h1>
+    </section>
+    <section class="order">
+        <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <form class="order__body" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="order__set field-group">
+                <legend class="field-group__title">Тип</legend>
+                <div class="field-group__item">
+                    <input type="radio" name="type" value="1" id="interior">
+                    <label class="field-group__label" for="interior">Акссуар для интерьера</label>
+                </div>
+                <div class="field-group__item">
+                    <input type="radio" name="type" value="2" id="toy">
+                    <label class="field-group__label" for="toy">Детская игрушка</label>
+                </div>
+            </fieldset>
+            <fieldset class="order__set field-group">
+                <legend class="field-group__title">Цвет</legend>
+                <div class="field-group__item">
+                    <input type="checkbox" name="color" id="white">
+                    <label class="field-group__label" for="white">Белый</label>
+                </div>
+                <div class="field-group__item">
+                    <input type="checkbox" name="color" id="grey">
+                    <label class="field-group__label" for="grey">Серый</label>
+                </div>
+                <div class="field-group__item">
+                    <input type="checkbox" name="color" id="tiffany">
+                    <label class="field-group__label" for="tiffany">«Тиффани»</label>
+                </div>
+                <div class="field-group__item">
+                    <input type="checkbox" name="color" id="black">
+                    <label class="field-group__label" for="black">Черный</label>
+                </div>
+                <div class="field-group__item">
+                    <input type="checkbox" name="color" id="pink">
+                    <label class="field-group__label" for="pink">Розовый</label>
+                </div>
+                <div class="field-group__item">
+                    <input type="checkbox" name="color" id="orange">
+                    <label class="field-group__label" for="orange">Оранжевый</label>
+                </div>
+            </fieldset>
+            <fieldset class="order__set field-group">
+                <legend class="field-group__title">ФИО</legend>
+                <div class="field-group__item">
+                    <label class="field-group__label field-group__label--name" for="first-name">Имя</label>
+                    <input type="text" name="name" id="first-name" placeholder="Введите ваше имя">
+                </div>
+                <div class="field-group__item">
+                    <label  class="field-group__label field-group__label--name" for="last-name">Фамилия:</label>
+                    <input type="text" name="name" id="last-name" placeholder="Укажите фамилию">
+                </div>
+                <div class="field-group__item">
+                    <label class="field-group__label field-group__label--name" for="middle-name">Отчество:</label>
+                    <input type="text" name="name" id="middle-name" placeholder="Отчество, если желаете">
+                </div>
+            </fieldset>
+            <fieldset class="order__set field-group">
+                <legend class="field-group__title">Тел</legend>
+                <div class="field-group__item">
+                    <input type="text" name="phone" id="phone" placeholder="+7 XXX XX XX">
+                </div>
+            </fieldset>
+            <fieldset class="order__set field-group">
+                <legend class="field-group__title">E-mail</legend>
+                <div class="field-group__item">
+                    <input type="text" name="email" id="email" placeholder="Ваш Email">
+                </div>
+            </fieldset>
+            <fieldset class="order__set field-group">
+                <legend class="field-group__title">Доп</legend>
+                <div class="field-group__item">
+                    <textarea name="details" placeholder="Опишите все ваши пожелания к заказу" rows="10">
+                    </textarea>
+                </div>
+            </fieldset>
+            <div class="order__wrapper">
+                <button type="submit" class="order__button general-button">
+                    Отправить заказ
+                </button>
+                <span>
+                    <sup>*</sup>Поля обязательные для заполнения
+                </span>
+            </div>
+        </form>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="page-footer__logo">
+        <img src="#" alt="Мишка">
+    </div>
+    <ul class="page-footer__socials">
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+    </ul>
+    <div class="page-footer__developer">
+        <span>Разаработано</span>
+        <img src="#" alt="academy-logo">
+    </div>
+</footer>
+</body>
+</html>
