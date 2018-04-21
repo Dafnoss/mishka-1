@@ -2,15 +2,17 @@
 <html lang="ru">
 <head>
     <title>Проект Мишка</title>
-    <meta charset="utf-8">
+    <meta charset="utf-9">
     <link href="css/style.css" rel="stylesheet">
 </head>
-    <body>
+    <body class="page-wrapper">
         <header class="page-header">
+            <div class="page-header__logo">
+                <img src="img/mishka-logo-mobile.svg" alt="logo" width="86" height="35">
+            </div>
             <nav class="page-header__nav">
-                <div class="page-header__logo">
-                    <img src="#" alt="logo">
-                </div>
+                <button type="button" class="page-header__button">
+                </button>
                 <ul class="page-header__list">
                     <li class="page-header__list-item">
                         <a>Каталог товаров</a>
@@ -35,21 +37,21 @@
         <main class="page-content">
             <section class="page-intro">
                 <h1 class="page-intro__header general-title">
-                    Милые штуки ручной работы для дома
+                    Милые штуки ручной<br> работы для дома
                 </h1>
                 <ul class="page-intro__items">
                     <li class="page-intro__button">
-                        <a>Предметы интерьера</a>
+                        <a class="page-intro__link">Предметы<br> интерьера</a>
                     </li>
                     <li class="page-intro__button">
-                        <a>Детские игрушки</a>
+                        <a class="page-intro__link">Детские<br> игрушки</a>
                     </li>
                 </ul>
             </section>
             <section class="page-features">
                 <header>
                     <h2 class="page-features__title general-title">Вязанные корзинки</h2>
-                    <span>Товар недели</span>
+                    <span class="page-features__sub-title">Товар недели</span>
                 </header>
                 <div class="page-feature__main">
                     <div class="page-features__description">
@@ -58,26 +60,28 @@
                         </p>
                         <table class="page-features__table">
                             <tr>
-                                <td>Цвет:</td>
-                                <td>«Тиффани»/серый</td>
+                                <td class="page-features__cell">Цвет:</td>
+                                <td class="page-features__cell">«Тиффани»/серый</td>
                             </tr>
                             <tr>
-                                <td>Диаметр:</td>
-                                <td>25 см</td>
+                                <td class="page-features__cell">Диаметр:</td>
+                                <td class="page-features__cell">25 см</td>
                             </tr>
                             <tr>
-                                <td>Высота:</td>
-                                <td>15 см</td>
+                                <td class="page-features__cell">Высота:</td>
+                                <td class="page-features__cell">15 см</td>
                             </tr>
                         </table>
-                        <p class="page-features__price">
-                            Цена: 990 руб.
-                        <p>
-                        <a class="page-features__button general-button">
-                        </a>
                     </div>
                     <div class="page-feature__image">
-                        <img src="#" alt="Вязаная корзинка">
+                        <img src="../img/triple-set-mobile.jpg" alt="Вязаная корзинка">
+                    </div>
+                    <div class="page-features__price">
+                        <p class="page-features__price-description">
+                            Цена: 990 руб.
+                        </p>
+                    <a class="page-features__button general-button">Заказать
+                    </a>
                     </div>
                 </div>
             </section>
@@ -86,12 +90,12 @@
                     Коротко о нас:
                 </h1>
                 <ul class="page-about__list">
-                    <li>Экологически  чистые материалы</li>
-                    <li>Скандинавский стиль  по российской цене</li>
-                    <li>Увеличивает лайки на фотографиях</li>
-                    <li>Связано вручную с  любовью и умилением</li>
-                    <li>Поддержка отечественного производителя</li>
-                    <li>Поставляется в  подарочной упаковке</li>
+                    <li class="page-about__list-item">Экологически <br> чистые материалы</li>
+                    <li class="page-about__list-item">Скандинавский стиль <br> по российской цене</li>
+                    <li class="page-about__list-item">Увеличивает лайки <br> на фотографиях</li>
+                    <li class="page-about__list-item">Связано вручную с <br> любовью и умилением</li>
+                    <li class="page-about__list-item">Поддержка отечественного производителя</li>
+                    <li class="page-about__list-item">Поставляется в <br> подарочной упаковке</li>
                 </ul>
             </section>
             <section class="page-review">
