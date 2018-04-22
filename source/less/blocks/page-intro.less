@@ -51,3 +51,33 @@
   background-size: 60px 60px;
   background-position: 235px 20px;
 }
+
+@media (min-width: @tablet) {
+  .page-intro {
+    margin-top: -80px;
+    background-size: 1150px;
+  }
+
+  .page-intro__header {
+    padding-top: 150px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 205px;
+  }
+
+  .page-intro__items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-intro__button {
+    width: 50%;
+    margin-left: 0px;
+  }
+
+  .page-intro__button:last-child {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0px;
+  }
+}

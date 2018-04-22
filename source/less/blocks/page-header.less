@@ -1,16 +1,65 @@
 .page-header {
   position: relative;
   .wrapper();
+  padding: 0;
+}
+
+.page-header__visible {
+  position: relative;
+  .wrapper();
   border-bottom: 1px solid #b1b4c5;
   line-height: 0px;
 }
 
-.page-header__list {
+.page-header__list-item--secondary {
   display: none;
 }
 
+.page-header__nav {
+  .wrapper();
+  padding: 0;
+  background-color: white;
+}
+
+.page-header__nav--open {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.page-header__list,
 .page-header__order {
-  display: none;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.page-header__list-item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 28px 0 28px 70px;
+  .fontBold1720();
+  line-height: 24px;
+  border-bottom: 1px solid #ececec;
+}
+
+
+.page-header__order-item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 28px 0 28px 70px;
+  .fontBold1720();
+  line-height: 24px;
+  border-bottom: 1px solid #ececec;
+  background-image: url("../img/icon-search.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 30px 33px;
+}
+
+.page-header__order-item:last-child {
+  background-image: url("../img/icon-basket.svg");
+  background-size: 21px 18px;
 }
 
 .page_header__details {
@@ -21,6 +70,7 @@
   text-align: center;
   padding: 22px 0;
 }
+
 
 .page-header__button {
   position: absolute;
@@ -49,4 +99,76 @@
   background-color: black;
   outline: none;
   box-shadow: 0px -6px, 0px 6px;
+}
+
+@media (min-width: @tablet) {
+  .page-header {
+    position: relative;
+    padding: 0;
+  }
+
+  .page-header__logo {
+    text-align: left;
+  }
+
+  .page-header__nav {
+    position: static;
+    transform: none;
+    background-color: transparent;
+  }
+
+  .page-header__button {
+    display: none;
+  }
+
+  .page-header__list {
+    display: flex;
+    background-color: transparent;
+  }
+
+  .page-header__list-item {
+    width: 167px;
+    padding-left: 0;
+    padding-right: 0px;
+
+    font-size: 15px;
+    border: none;
+  }
+
+  .page-header__order {
+    position: absolute;
+    display: flex;
+
+    top: 0;
+    right: 50px;
+  }
+
+  .page-header__order-item {
+    width: auto;
+    background-position: 25px 33px;
+  }
+
+  .page-header__order-item:first-child {
+    width: 0px;
+    font-size: 0px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    background-position: 25px 33px;
+    background-color: transparent;
+  }
+
+  .page_header__details {
+    display: block;
+    margin-left: auto;
+    margin-right: 0px;
+    align-self: center;
+    color: #444444;
+    background-color: transparent;
+
+  }
+
+  .page-header_menu-wrapper {
+    display: flex;
+    background-color: transparent;
+  }
 }
