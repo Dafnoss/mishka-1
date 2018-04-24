@@ -86,9 +86,6 @@
     margin-right: 40px;
   }
 
-  .page-features__image {
-    widows: 50%;
-  }
 
   .page-features__price {
     position: absolute;
@@ -123,5 +120,45 @@
   .page-features__cell:first-child {
     padding-right: 0px;
   }
+
+}
+
+@media (min-width: @desktop) {
+  .page-features {
+    padding-bottom: 75px;
+    padding-top: 130px;
+    padding-left: 275px;
+    position: relative;
+  }
+
+  .page-features__title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .page-features__sub-title {
+    position: absolute;
+    left: 125px;
+  }
+
+  .page-feature__image {
+    width: 525px;
+  }
+
+  .page-feature__image img{
+    z-index: -1;
+    margin-top: -160px;
+    width: 525px;
+  }
+
+  .page-features__about {
+    margin-bottom: 60px;
+  }
+
+  .page-features__price {
+    width: 40%;
+  }
+
+
 
 }
