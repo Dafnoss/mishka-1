@@ -7,29 +7,35 @@
 </head>
 <body>
 <header class="page-header">
-    <nav class="page-header__nav">
+    <div class="page-header__visible">
         <div class="page-header__logo">
-            <img src="#" alt="logo">
+            <img src="img/mishka-logo-mobile.svg" alt="logo" width="86" height="35">
         </div>
-        <ul class="page-header__list">
-            <li class="page-header__list-item">
-                <a>Каталог товаров</a>
-            </li>
-            <li class="page-header__list-item">
-                <a>Вязание на заказ</a>
-            </li>
-            <li class="page-header__list-item page-header__list-item--secondary">
-                <a>Новые поступления</a>
-            </li>
-            <li class="page-header__list-item page-header__list-item--secondary">
-                <a>Pаспродажа</a>
-            </li>
-        </ul>
-        <ul class="page-header__order">
-            <li class="page-header__order-item">Поиск по сайту</li>
-            <li class="page-header__order-item">Корзина: пока пуста</li>
-        </ul>
-        <span class="page_header__details">Бесплатная доставка по Росиии</span>
+        <button type="button" class="page-header__button page-header__button--open">
+        </button>
+    </div>
+    <nav class="page-header__nav page-header__nav--open">
+        <div class="page-header_menu-wrapper">
+            <ul class="page-header__list">
+                <li class="page-header__list-item page-header__list-item--primary">
+                    <a href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="page-header__list-item page-header__list-item--primary">
+                    <a>Вязание на заказ</a>
+                </li>
+                <li class="page-header__list-item page-header__list-item--secondary">
+                    <a>Новые поступления</a>
+                </li>
+                <li class="page-header__list-item page-header__list-item--secondary">
+                    <a>Pаспродажа</a>
+                </li>
+            </ul>
+            <ul class="page-header__order">
+                <li class="page-header__order-item">Поиск по сайту</li>
+                <li class="page-header__order-item">Корзина: пока пуста</li>
+            </ul>
+            <span class="page_header__details">Бесплатная доставка по Росcии</span>
+        </div>
     </nav>
 </header>
 <main class="page-content">
@@ -127,17 +133,17 @@
 </main>
 <footer class="page-footer">
     <div class="page-footer__logo">
-        <img src="#" alt="Мишка">
+        <img src="../img/mishka-logo-mobile.svg" alt="Мишка">
     </div>
     <ul class="page-footer__socials">
-        <li>Instagram</li>
-        <li>Facebook</li>
-        <li>Twitter</li>
+        <li class="page-footer__icon">Instagram</li>
+        <li class="page-footer__icon">Facebook</li>
+        <li class="page-footer__icon">Twitter</li>
     </ul>
-    <div class="page-footer__developer">
-        <span>Разаработано</span>
-        <img src="#" alt="academy-logo">
-    </div>
+    <p class="page-footer__developer">
+        <span>Разработано</span>
+        <img class="page-footer__developer-logo" src="../img/htmlacademy.svg" alt="academy-logo">
+    </p>
 </footer>
 </body>
 </html>
