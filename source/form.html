@@ -16,7 +16,7 @@
         <button type="button" class="page-header__button page-header__button--open">
         </button>
     </div>
-    <nav class="page-header__nav page-header__nav--ope">
+    <nav class="page-header__nav page-header__nav--js page-header__nav--ope">
         <div class="page-header_menu-wrapper">
             <ul class="page-header__list">
                 <li class="page-header__list-item page-header__list-item--primary">
@@ -70,83 +70,87 @@
             </fieldset>
             <fieldset class="order__set field-group field-group--checkbox">
                 <div class="field-group__fieldset-wrapper">
-                <h2 class="field-group__title">Цвет</h2>
-                <div class="field-group__wrapper field-group__wrapper--checkbox">
-                    <div class="field-group__item field-group__item--checkbox">
-                        <input type="checkbox" name="color" id="white" checked>
-                        <label class="field-group__label field-group__label--checkbox" for="white">Белый</label>
+                    <h2 class="field-group__title">Цвет</h2>
+                    <div class="field-group__wrapper field-group__wrapper--checkbox">
+                        <div class="field-group__item field-group__item--checkbox">
+                            <input type="checkbox" name="color" id="white" checked>
+                            <label class="field-group__label field-group__label--checkbox" for="white">Белый</label>
+                        </div>
+                        <div class="field-group__item field-group__item--checkbox">
+                            <input type="checkbox" name="color" id="grey" checked>
+                            <label class="field-group__label field-group__label--checkbox" for="grey">Серый</label>
+                        </div>
+                        <div class="field-group__item field-group__item--checkbox">
+                            <input type="checkbox" name="color" id="tiffany">
+                            <label class="field-group__label field-group__label--checkbox"
+                                   for="tiffany">«Тиффани»</label>
+                        </div>
+                        <div class="field-group__item field-group__item--checkbox">
+                            <input type="checkbox" name="color" id="black">
+                            <label class="field-group__label field-group__label--checkbox" for="black">Черный</label>
+                        </div>
+                        <div class="field-group__item field-group__item--checkbox">
+                            <input type="checkbox" name="color" id="pink">
+                            <label class="field-group__label field-group__label--checkbox" for="pink">Розовый</label>
+                        </div>
+                        <div class="field-group__item field-group__item--checkbox">
+                            <input type="checkbox" name="color" id="orange">
+                            <label class="field-group__label field-group__label--checkbox"
+                                   for="orange">Оранжевый</label>
+                        </div>
                     </div>
-                    <div class="field-group__item field-group__item--checkbox">
-                        <input type="checkbox" name="color" id="grey" checked>
-                        <label class="field-group__label field-group__label--checkbox" for="grey">Серый</label>
-                    </div>
-                    <div class="field-group__item field-group__item--checkbox">
-                        <input type="checkbox" name="color" id="tiffany">
-                        <label class="field-group__label field-group__label--checkbox" for="tiffany">«Тиффани»</label>
-                    </div>
-                    <div class="field-group__item field-group__item--checkbox">
-                        <input type="checkbox" name="color" id="black">
-                        <label class="field-group__label field-group__label--checkbox" for="black">Черный</label>
-                    </div>
-                    <div class="field-group__item field-group__item--checkbox">
-                        <input type="checkbox" name="color" id="pink">
-                        <label class="field-group__label field-group__label--checkbox" for="pink">Розовый</label>
-                    </div>
-                    <div class="field-group__item field-group__item--checkbox">
-                        <input type="checkbox" name="color" id="orange">
-                        <label class="field-group__label field-group__label--checkbox" for="orange">Оранжевый</label>
-                    </div>
-                </div>
                 </div>
             </fieldset>
             <fieldset class="order__set field-group">
                 <div class="field-group__fieldset-wrapper">
-                <h2 class="field-group__title">ФИО</h2>
-                <div class="field-group__wrapper">
-                    <div class="field-group__item field-group__item--name">
-                        <label class="field-group__label field-group__label--name" for="first-name">Имя</label>
-                        <input type="text" name="name" id="first-name" placeholder="Введите ваше имя&#42">
+                    <h2 class="field-group__title">ФИО</h2>
+                    <div class="field-group__wrapper">
+                        <div class="field-group__item field-group__item--name">
+                            <label class="field-group__label field-group__label--name" for="first-name">Имя</label>
+                            <input type="text" name="name" id="first-name" placeholder="Введите ваше имя&#42">
+                        </div>
+                        <div class="field-group__item field-group__item--name">
+                            <label class="field-group__label field-group__label--name" for="last-name">Фамилия:</label>
+                            <input type="text" name="name" id="last-name" placeholder="Укажите фамилию&#42">
+                        </div>
+                        <div class="field-group__item field-group__item--name">
+                            <label class="field-group__label field-group__label--name"
+                                   for="middle-name">Отчество:</label>
+                            <input type="text" name="name" id="middle-name" placeholder="Отчество, если желаете">
+                        </div>
                     </div>
-                    <div class="field-group__item field-group__item--name">
-                        <label class="field-group__label field-group__label--name" for="last-name">Фамилия:</label>
-                        <input type="text" name="name" id="last-name" placeholder="Укажите фамилию&#42">
-                    </div>
-                    <div class="field-group__item field-group__item--name">
-                        <label class="field-group__label field-group__label--name" for="middle-name">Отчество:</label>
-                        <input type="text" name="name" id="middle-name" placeholder="Отчество, если желаете">
-                    </div>
-                </div>
                 </div>
             </fieldset>
             <fieldset class="order__set field-group field-group--phone">
                 <div class="field-group__fieldset-wrapper">
-                <h2 class="field-group__title field-group__title--phone">Тел</h2>
-                <div class="field-group__wrapper">
-                    <div class="field-group__item field-group__item--phone">
-                        <input type="text" name="phone" id="phone" placeholder="+7 XXX XX XX&#42">
+                    <h2 class="field-group__title field-group__title--phone">Тел</h2>
+                    <div class="field-group__wrapper">
+                        <div class="field-group__item field-group__item--phone">
+                            <input type="text" name="phone" id="phone" placeholder="+7 XXX XX XX&#42">
+                        </div>
                     </div>
-                </div>
                 </div>
             </fieldset>
             <fieldset class="order__set field-group field-group--mail">
                 <div class="field-group__fieldset-wrapper">
-                <h2 class="field-group__title field-group__title--mail">E-mail</h2>
-                <div class="field-group__wrapper">
-                    <div class="field-group__item field-group__item--mail">
-                        <input type="text" name="email" id="email" placeholder="Ваш Email&#42">
+                    <h2 class="field-group__title field-group__title--mail">E-mail</h2>
+                    <div class="field-group__wrapper">
+                        <div class="field-group__item field-group__item--mail">
+                            <input type="text" name="email" id="email" placeholder="Ваш Email&#42">
+                        </div>
                     </div>
-                </div>
                 </div>
                 </div>
             </fieldset>
             <fieldset class="order__set field-group">
                 <div class="field-group__fieldset-wrapper">
-                <h2 class="field-group__title">Доп</h2>
-                <div class="field-group__wrapper">
-                    <div class="field-group__item field-group__item--details">
-                    <textarea name="details" placeholder="Опишите все ваши пожелания к заказу" rows="7"></textarea>
+                    <h2 class="field-group__title">Доп</h2>
+                    <div class="field-group__wrapper">
+                        <div class="field-group__item field-group__item--details">
+                            <textarea name="details" placeholder="Опишите все ваши пожелания к заказу"
+                                      rows="7"></textarea>
+                        </div>
                     </div>
-                </div>
                 </div>
             </fieldset>
             <div class="order__wrapper">
@@ -176,5 +180,6 @@
         <img class="page-footer__developer-logo" src="../img/htmlacademy.svg" alt="academy-logo">
     </p>
 </footer>
+<script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>

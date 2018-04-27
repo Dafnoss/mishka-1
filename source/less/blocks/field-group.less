@@ -7,6 +7,7 @@
 
 .field-group__title {
   position: relative;
+  z-index: -1;
   padding-right: 10px;
   margin-bottom: 20px;
 
@@ -172,6 +173,7 @@
   }
 
   .field-group__title {
+    z-index: 0;
     width: 23%;
     flex-shrink: 0;
     padding-top: 8px;
@@ -195,6 +197,26 @@
     padding-top: 20px;
   }
 
+  .field-group__item--mail {
+    background-image: url("../img/icon-mail.svg");
+    background-size: 48px 31.5px;
+
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+  }
+
+  .field-group__item--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-size: 25px 24px;
+
+    background-repeat: no-repeat;
+    background-position: 98% 30%;
+  }
+
+  .field-group__item--radio {
+    padding-left: 80px;
+  }
+
   .field-group__item--radio,
   .field-group__item--checkbox {
     margin-bottom: 20px;
@@ -206,7 +228,6 @@
     height: 50px;
 
   }
-
 
   .field-group__label--radio::before,
   .field-group__label--checkbox::before {
@@ -249,19 +270,21 @@
     padding-top: 0px;
   }
 
-
-  .field-group__item--name input[type="text"] {
-    padding-left: 15px;
-  }
-
   .field-group__item input[type="text"],
   .field-group__item textarea {
+    padding-left: 15px;
     font-size: 19px;
     line-height: 18px;
   }
+
   .field-group__label--name {
     padding-right: 25px;
     align-self: center;
+  }
+
+  .field-group__item--phone input[type="text"],
+  .field-group__item--mail input[type="text"] {
+    padding-right: 40px;
   }
 
 }

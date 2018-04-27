@@ -1,5 +1,6 @@
 .product-card {
   position: relative;
+  z-index: -1;
   border: 1px solid #ededed;
   margin-bottom: 30px;
 
@@ -111,6 +112,7 @@
   .product-card {
     display: flex;
     justify-content: space-between;
+    z-index: 0;
   }
 
   .product-card__title {
@@ -167,13 +169,14 @@
   }
 
   .product-card__picture--prod {
-    width: 668px;
+    width: 100%;
     height: 456px;
 
   }
 
   .product-card__picture--prod img{
-    width: 668px
+    width: 100%;
+    height: 100%;
 
   }
 
@@ -221,11 +224,15 @@
 
   .product-card__picture--prod {
     width: 65%;
+    line-height: 0px;
+    font-size: 0px ;
     flex-shrink: 0;
+
+    margin-bottom: -1px;
   }
 
   .product-card__picture--prod img {
-    width: 65%;
+    width: 100%;
 
   }
 
