@@ -1,8 +1,11 @@
 .intro {
-  .wrapper();
-  background-color: #f1f1f1;
 
   text-align: center;
+}
+
+.intro__wrapper {
+  .wrapper();
+  background-color: #f1f1f1;
 }
 
 .intro__header {
@@ -12,8 +15,25 @@
 
 @media (min-width: @tablet) {
   .intro {
+    background-color: #f1f1f1;
     padding-top: 50px;
     margin-top: -80px;
+    position: relative;
+    z-index: -1;
+  }
+
+  .intro::after {
+    content: "";
+    position: absolute;
+    margin-bottom: -17px;
+
+    bottom: 0px;
+    left: 0px;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    height: 34px;
+    width: 100%;
   }
 
   .intro__header {

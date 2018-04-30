@@ -21,7 +21,7 @@ gulp.task("style", function() {
            paths: ['./**/*.less']
        }))
         .pipe(postcss([
-            autoprefixer()
+            autoprefixer({browsers: ['last 5 version']})
         ]))
         .pipe(gulp.dest("build/css"))
         .pipe(minify())

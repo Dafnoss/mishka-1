@@ -38,10 +38,21 @@
   margin-left: -30px;
 }
 
-.page-contacts__image img {
+.page-contacts__img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.page-contacts__map-icon {
+  position: absolute;
+  z-index: 2;
+  width: 67px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .page-contacts__button {
@@ -152,5 +163,16 @@
     left: 0px;
   }
 
+}
+
+@media (min-width: @adaptive) and (max-width: @tablet) {
+  .page-contacts__image {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .page-contacts__img {
+    width: 100%;
+  }
 
 }

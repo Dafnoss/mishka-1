@@ -1,7 +1,22 @@
 .page-features {
+  position: relative;
   .wrapper();
   padding-bottom: 30px;
   padding-top: 30px;
+}
+
+.page-features::after {
+  content: "";
+  position: absolute;
+
+  bottom: 0px;
+  left: 0px;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: auto 6px;
+  height: 6px;
+  width: 100%;
 }
 
 .page-feature__image{
@@ -60,6 +75,13 @@
 @media (min-width: @tablet) {
   .page-features {
     padding-top: 50px;
+  }
+
+  .page-features::after {
+    margin-bottom: -7px;
+    background-size: auto 15px;
+    height: 15px;
+
   }
 
   .page-features__header {
@@ -131,6 +153,15 @@
     position: relative;
   }
 
+  .page-features::after {
+    margin-bottom: -12px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-size: auto 23px;
+    width: 1050px;
+    height: 23px;
+  }
+
   .page-features__title {
     position: relative;
     z-index: 1;
@@ -159,6 +190,23 @@
     width: 40%;
   }
 
+}
 
+@media (min-width: @mobile) and (max-width: @tablet) {
+  .page-features__table {
+    width: 100%;
+  }
+
+  .page-feature__image img {
+    width: 100%;
+  }
+
+  .page-features__price {
+    width: 100%;
+  }
+
+  .page-features__button {
+    width: 100%;
+  }
 
 }
