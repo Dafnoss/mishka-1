@@ -18,8 +18,6 @@
   "license": "ISC",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x",
     "autoprefixer": "^8.2.0",
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
@@ -34,7 +32,10 @@
     "gulp-svgstore": "^6.1.1",
     "gulp-webp": "^3.0.0",
     "posthtml-include": "^1.1.0",
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "stylelint": "9.2.x",
+    "stylelint-config-htmlacademy": "0.1.x",
+    "svgo": "^1.0.5"
   },
   "editorconfig-cli": [
     "*.json",
