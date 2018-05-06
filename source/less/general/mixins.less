@@ -1,8 +1,9 @@
 .wrapper() {
-  margin: 0 auto;
-  width: @mobile;
-  padding: 0 30px;
   box-sizing: border-box;
+  width: @mobile;
+  margin: 0 auto;
+  padding: 0 30px;
+
   outline: 0px solid red;
 
   @media (min-width: @adaptive) and (max-width: @tablet) {
@@ -11,8 +12,8 @@
 
   @media (min-width: @tablet) {
     width: @tablet;
-    padding-left: 50px;
     padding-right: 50px;
+    padding-left: 50px;
   }
 
   @media (min-width: @desktop) {
@@ -21,11 +22,12 @@
 }
 
 .fontBold1720() {
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  font-style: normal;
   color: black;
+
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 20px;
 }
 
 /* @media (min-width: @mobile) and (max-width: @tablet) {

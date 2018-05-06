@@ -10,7 +10,7 @@
     "test": "npm run editorconfig",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
-    "csscomb": "csscomb ./source/**/*.less"
+    "csscomb": "csscomb ./source/less/**/*.less"
   },
   "engines": {
     "node": "8.11"

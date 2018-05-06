@@ -1,5 +1,6 @@
 .page-footer {
   .wrapper();
+
   background-color: #f1f1f1;
 }
 
@@ -13,29 +14,32 @@
 
 .page-footer__socials {
   display: flex;
+  align-items: flex-end;
   flex-shrink: 0;
   justify-content: center;
-  align-items: flex-end;
 
-  list-style: none;
   margin: 0;
   padding: 22px 0 27px 0;
 
-  font-size: 0px;
+  list-style: none;
+
   border-bottom: 1px solid #e5e5e5;
+
+  font-size: 0px;
 
 }
 
 .page-footer__icon {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
-  text-align: center;
-  vertical-align: middle;
   width: 30px;
   height: 30px;
+
   cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .page-footer__icon:not(:last-child) {
@@ -49,8 +53,8 @@
 
 .page-footer__icon:active,
 .page-footer__logo-icon:active {
-  color: #46c1ae;
   opacity: 0.3;
+  color: #46c1ae;
 }
 
 .page-footer__logo-icon:active
@@ -60,9 +64,10 @@
 }
 
 .page-footer__developer {
-  text-align: center;
   margin: 0px;
   padding: 15px 0;
+
+  text-align: center;
 
 }
 
@@ -72,18 +77,22 @@
   padding-right: 10px;
 
   vertical-align: middle;
+
   font-size: 19px;
-  line-height: 18px;
   font-weight: bold;
+  line-height: 18px;
 }
 
 .page-footer__developer-logo {
   display: inline-block;
-  vertical-align: middle;
+
   width: 44px;
   height: 56px;
-  color: #63d1bb;
+
   cursor: pointer;
+  vertical-align: middle;
+
+  color: #63d1bb;
 }
 
 .page-footer__developer-logo:hover {
@@ -91,8 +100,8 @@
 }
 
 .page-footer__developer-logo:active {
-  color: #46c1ae;
   opacity: 0.3;
+  color: #46c1ae;
 }
 
 @media (min-width: @tablet) {
@@ -103,27 +112,33 @@
 
     padding-top: 40px;
     padding-bottom: 22px;
+
     background-color: #f1f1f1;
   }
 
   .page-footer__logo {
-    width: 33%;
     display: block;
     align-self: center;
+
+    width: 33%;
+
     color: black;
   }
 
 
   .page-footer__socials{
     width: 33%;
+
     border: 0px;
   }
 
   .page-footer__developer {
     align-self: center;
+
     width: 33%;
-    text-align: right;
     padding: 0;
+
+    text-align: right;
   }
 
 }

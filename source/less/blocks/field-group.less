@@ -1,6 +1,8 @@
 .field-group {
   .wrapper();
+
   padding: 0 30px 20px 30px;
+
   border: 0px;
 
 }
@@ -8,30 +10,37 @@
 .field-group__title {
   position: relative;
   z-index: -1;
-  padding-right: 10px;
+
   margin-bottom: 20px;
+  padding-right: 10px;
+
+  text-transform: uppercase;
+
+  color: #62d1ba;
 
   font-size: 17px;
-  line-height: 16px;
   font-weight: bold;
-  color: #62d1ba;
-  text-transform: uppercase;
+  line-height: 16px;
 }
 
 
 .field-group__title::before {
-  content: "";
   position: absolute;
   z-index: 1;
-  width: 77%;
-  height: 1.3px;
   top: 7px;
   right: 0px;
+
+  width: 77%;
+  height: 1.3px;
+
+  content: "";
+
   background-color: #62d1ba;
 }
 
 .field-group__title--mail::before {
   width: 70%;
+
   background-color: #62d1ba;
 }
 
@@ -42,49 +51,54 @@
 
 .field-group__item {
   position: relative;
+
   padding-top: 15px;
   padding-bottom: 15px;
 
   font-size: 17px;
-  line-height: 18px;
   font-weight: bold;
+  line-height: 18px;
 }
 
 .field-group__item--radio {
-  padding-left: 60px;
   margin-bottom: 0px;
+  padding-left: 60px;
 }
 
 .field-group__item--checkbox {
-  padding-left: 60px;
   margin-bottom: 15px;
+  padding-left: 60px;
 }
 
 .field-group__label--radio::before,
 .field-group__label--checkbox::before {
-  box-sizing: border-box;
-  content: "";
   position: absolute ;
   top: 5px;
   left: 0px;
 
+  box-sizing: border-box;
   width: 40px;
   height: 40px;
+
+  content: "";
+
   border: 2px solid black;
   border-radius: 50%;
 }
 
 .field-group__item input[type="radio"]:checked ~ .field-group__label::after {
-  box-sizing: border-box;
-  content: "";
   position: absolute ;
   top: 15px;
   left: 10px;
 
+  box-sizing: border-box;
   width: 20px;
   height: 20px;
-  background-color: #62d1ba;
+
+  content: "";
+
   border-radius: 50%;
+  background-color: #62d1ba;
 }
 
 .field-group__label--checkbox:before {
@@ -92,32 +106,33 @@
 }
 
 .field-group__item input[type="checkbox"]:checked ~ .field-group__label--checkbox::after {
-  box-sizing: border-box;
-  content: "";
   position: absolute ;
   top: 15px;
   left: 10px;
 
+  box-sizing: border-box;
   width: 23px;
   height: 10px;
 
+  content: "";
+  transform: rotate(-45deg);
+
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-  transform: rotate(-45deg);
 
 }
 
 .field-group__item input[type="text"] {
   box-sizing: border-box;
-  padding: 15px 15px 15px 0px;
   width: 100%;
-
-  font-size: 17px;
-  line-height: 18px;
+  padding: 15px 15px 15px 0px;
 
   border: 0px;
   border-bottom: 2px solid black;
   background-color: transparent;
+
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .field-group__item input[type="text"]:hover {
@@ -136,8 +151,8 @@
 .field-group__item--details textarea {
   box-sizing: border-box;
   width: 100%;
-
   padding: 10px;
+
   border: 2px solid black;
 
   font-size: 17px;
@@ -162,6 +177,13 @@
   margin-bottom: 0px;
 }
 
+.field-group__phone-icon,
+.field-group__mail-icon {
+  display: none;
+}
+
+
+
 .field-group__item--mail,
 .field-group__item--phone,
 .field-group__item--details {
@@ -174,18 +196,21 @@
 
 @media (min-width: @tablet) {
   .field-group {
-    border: 0px;
     padding-top: 50px;
     padding-bottom: 30px;
+
+    border: 0px;
   }
 
   .field-group--phone {
     padding-bottom: 0px;
+
     background-color: #f1f1f1;
   }
 
   .field-group--mail {
     padding-top: 0px;
+
     background-color: #f1f1f1;
   }
 
@@ -200,8 +225,10 @@
 
   .field-group__title {
     z-index: 0;
-    width: 23%;
+
     flex-shrink: 0;
+
+    width: 23%;
     padding-top: 8px;
   }
 
@@ -219,8 +246,8 @@
   }
 
   .field-group__item {
-    padding-bottom: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .field-group__item--phone,
@@ -230,9 +257,11 @@
 
   .field-group__mail-icon,
   .field-group__phone-icon {
+    display: block;
     position: absolute;
     top: 20%;
     right: 10px;
+
     color: #cccccc;
   }
 
@@ -278,11 +307,11 @@
   }
 
   .field-group__item input[type="radio"]:checked ~ .field-group__label::after {
-    width: 20px;
-    height: 20px;
-
     top: 20px;
     left: 15px;
+
+    width: 20px;
+    height: 20px;
   }
 
   .field-group__wrapper--checkbox {
@@ -295,7 +324,6 @@
   }
 
   .field-group__item input[type="checkbox"]:checked ~ .field-group__label--checkbox::after {
-
     width: 32px;
     height: 16px;
   }
@@ -308,20 +336,21 @@
   .field-group__item--details,
   .field-group__item--phone,
   .field-group__item--mail {
-
     padding-top: 0px;
   }
 
   .field-group__item input[type="text"],
   .field-group__item textarea {
     padding-left: 15px;
+
     font-size: 19px;
     line-height: 18px;
   }
 
   .field-group__label--name {
-    padding-right: 25px;
     align-self: center;
+
+    padding-right: 25px;
   }
 
   .field-group__item--phone input[type="text"],
@@ -338,6 +367,7 @@
 
   .field-group__title {
     width: 165px;
+
     text-align: center;
   }
 

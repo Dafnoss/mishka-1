@@ -1,22 +1,26 @@
 .page-features {
-  position: relative;
   .wrapper();
-  padding-bottom: 30px;
+
+  position: relative;
+
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .page-features::after {
-  content: "";
   position: absolute;
-
   bottom: 0px;
   left: 0px;
+
+  width: 100%;
+  height: 6px;
+
+  content: "";
+
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: center;
-  background-image: url("../img/bg-zigzag-line.svg");
   background-size: auto 6px;
-  height: 6px;
-  width: 100%;
 }
 
 .page-feature__image{
@@ -29,21 +33,24 @@
 
 .page-features__sub-title {
   .fontBold1720();
-  color: #63d1bb;
+
   text-transform: uppercase;
+
+  color: #63d1bb;
 
 }
 
 .page-features__title {
-  letter-spacing: -0.012em;
   padding-top: 0;
+
+  letter-spacing: -0.012em;
 }
 
 .page-features__table {
-  border-collapse: collapse;
   margin-bottom: 25px;
 
   color: #444444;
+  border-collapse: collapse;
 }
 
 .page-features__cell {
@@ -58,9 +65,10 @@
 }
 
 .page-features__price {
+  .fontBold1720();
+
   width: 260px;
 
-  .fontBold1720();
   text-align: center;
 }
 
@@ -78,29 +86,33 @@
   }
 
   .page-features::after {
-    margin-bottom: -7px;
-    background-size: auto 15px;
     height: 15px;
+    margin-bottom: -7px;
+
+    background-size: auto 15px;
 
   }
 
   .page-features__header {
     display: flex;
-    flex-shrink: 0;
     align-items: center;
+    flex-shrink: 0;
+
     margin-bottom: 60px;
 
   }
 
   .page-features__sub-title {
-    margin-left: auto;
     width: 100px;
+    margin-left: auto;
+
     text-align: center;
   }
 
   .page-feature__main {
-    display: flex;
     position: relative;
+
+    display: flex;
   }
 
   .page-features__description {
@@ -147,19 +159,21 @@
 
 @media (min-width: @desktop) {
   .page-features {
-    padding-bottom: 75px;
-    padding-top: 130px;
-    padding-left: 175px;
     position: relative;
+
+    padding-top: 130px;
+    padding-bottom: 75px;
+    padding-left: 175px;
   }
 
   .page-features::after {
-    margin-bottom: -12px;
-    margin-right: 50px;
-    margin-left: 50px;
-    background-size: auto 23px;
     width: 1050px;
     height: 23px;
+    margin-right: 50px;
+    margin-bottom: -12px;
+    margin-left: 50px;
+
+    background-size: auto 23px;
   }
 
   .page-features__title {
@@ -178,8 +192,9 @@
 
   .page-feature__image img{
     z-index: -1;
-    margin-top: -160px;
+
     width: 525px;
+    margin-top: -160px;
   }
 
   .page-features__about {
