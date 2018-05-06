@@ -223,20 +223,26 @@
     padding-top: 20px;
   }
 
+  .field-group__item--phone,
   .field-group__item--mail {
-    background-image: url("../img/icon-mail.svg");
-    background-size: 48px 31.5px;
-
-    background-repeat: no-repeat;
-    background-position: 100% 30%;
+    position: relative;
   }
 
-  .field-group__item--phone {
-    background-image: url("../img/icon-phone.svg");
-    background-size: 25px 24px;
+  .field-group__mail-icon,
+  .field-group__phone-icon {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    color: #cccccc;
+  }
 
-    background-repeat: no-repeat;
-    background-position: 98% 30%;
+  .field-group__item input:hover + .field-group__mail-icon,
+  .field-group__item input:hover + .field-group__phone-icon,
+  .field-group__item input:active + .field-group__mail-icon,
+  .field-group__item input:active + .field-group__phone-icon,
+  .field-group__item input:focus + .field-group__mail-icon,
+  .field-group__item input:focus + .field-group__phone-icon {
+    color: #62d1ba;
   }
 
   .field-group__item--radio {

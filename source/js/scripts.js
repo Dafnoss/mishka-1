@@ -3,6 +3,7 @@ window.onload = function () {
     var navButton =  document.querySelector('.page-header__button');
     var popUp = document.querySelector('.pop-up');
     var popUpBtn = document.querySelector('.page-features__button');
+    var BasketsCatalog = document.querySelectorAll('.product-card__basket-icon');
 
     navList.classList.add('page-header__nav--js');
 
@@ -23,6 +24,14 @@ window.onload = function () {
         popUpBtn.addEventListener('click', function () {
             popUp.classList.add('pop-up--open')
 
+        })
+    }
+
+    if (BasketsCatalog) {
+        BasketsCatalog.forEach(function (item, index, arr) {
+            item.addEventListener('click', function () {
+                popUp.classList.add('pop-up--open');
+            });
         })
     }
 

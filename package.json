@@ -9,7 +9,8 @@
     "start": "npm run build && gulp serve",
     "test": "npm run editorconfig",
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint ."
+    "stylelint": "stylelint .",
+    "csscomb": "csscomb ./source/**/*.less"
   },
   "engines": {
     "node": "8.11"
@@ -24,6 +25,7 @@
     "gulp": "^3.9.1",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^4.1.0",
+    "gulp-jsmin": "^0.1.5",
     "gulp-less": "^3.5.0",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
@@ -35,7 +37,8 @@
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x",
-    "svgo": "^1.0.5"
+    "svgo": "^1.0.5",
+    "csscomb": "^4.2.0"
   },
   "editorconfig-cli": [
     "*.json",

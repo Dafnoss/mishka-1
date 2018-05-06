@@ -13,6 +13,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var run = require("run-sequence");
 var del = require("del");
+var jsmin = require('gulp-jsmin');
 
 gulp.task("style", function() {
    gulp.src("source/less/style.less")
@@ -42,6 +43,7 @@ gulp.task("serve", function () {
 
     gulp.watch("source/less/**/*.less", ["style"]);
     gulp.watch("source/*.html", ["html"]);
+    gulp.watch("source/js/*.js", ["jsmin"]);
 });
 
 gulp.task("images", function () {
@@ -80,6 +82,15 @@ gulp.task("html", function () {
         .pipe(server.stream());
 });
 
+gulp.task("jsmin", function () {
+    return gulp.src("source/js/*.js")
+        .pipe(jsmin())
+        .pipe(rename("scripts.min.js"))
+        .pipe(gulp.dest("build/js"))
+        .pipe(server.stream());
+});
+
+
 gulp.task("build", function (done){
     run(
         "clean",
@@ -87,6 +98,7 @@ gulp.task("build", function (done){
         "style",
       //  "sprite",
         "html",
+        "jsmin",
         done
     );
 });
@@ -94,8 +106,7 @@ gulp.task("build", function (done){
 gulp.task("copy", function () {
     return gulp.src([
         "source/fonts/**/*.woff2",
-        "source/img/**",
-        "source/js/**"
+        "source/img/**"
         ], {
         base: "./source/"
         })

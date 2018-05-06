@@ -55,25 +55,29 @@
   border-top: 1px solid #ededed;
 }
 
-.product-card__price::before {
-  content: "";
+.product-card__basket-icon {
   position: absolute;
+  color: #e5e5e5;
 
   top: 27px;
   right: 0px;
 
-
-  width: 20px;
-  height: 19px;
-
-  background-image: url("../img/icon-basket.svg");
-  background-size: 20px 19px;
-
+  cursor: pointer;
 }
+
+.product-card__basket-icon:hover {
+  color: #62d1ba;
+}
+
+.product-card__basket-icon:active {
+  opacity: 0.3;
+  color: #62d1ba;
+}
+
+
 
 .product-card__title--prod {
   position: relative;
-  padding-left: 45px;
   margin-top: 25px;
   margin-left: 30px;
   padding-left: 60px;
