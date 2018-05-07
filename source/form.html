@@ -1,143 +1,229 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Проект Мишка</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
-    <nav class="page-header__nav">
+    <div class="page-header__visible">
         <div class="page-header__logo">
-            <img src="#" alt="logo">
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                    <img src="img/logo-mobile.svg" alt="logo" width="86" height="35">
+                </picture>
+            </a>
         </div>
-        <ul class="page-header__list">
-            <li class="page-header__list-item">
-                <a>Каталог товаров</a>
-            </li>
-            <li class="page-header__list-item">
-                <a>Вязание на заказ</a>
-            </li>
-            <li class="page-header__list-item page-header__list-item--secondary">
-                <a>Новые поступления</a>
-            </li>
-            <li class="page-header__list-item page-header__list-item--secondary">
-                <a>Pаспродажа</a>
-            </li>
-        </ul>
-        <ul class="page-header__order">
-            <li class="page-header__order-item">Поиск по сайту</li>
-            <li class="page-header__order-item">Корзина: пока пуста</li>
-        </ul>
-        <span class="page_header__details">Бесплатная доставка по Росиии</span>
+        <button type="button" class="page-header__button">
+        </button>
+    </div>
+    <nav class="page-header__nav">
+        <div class="page-header_menu-wrapper">
+            <ul class="page-header__list">
+                <li class="page-header__list-item page-header__list-item--primary">
+                    <a href="catalog.html">Каталог товаров</a>
+                </li>
+                <li class="page-header__list-item page-header__list-item--primary">
+                    <a href="form.html">Вязание на заказ</a>
+                </li>
+                <li class="page-header__list-item page-header__list-item--secondary">
+                    <a>Новые поступления</a>
+                </li>
+                <li class="page-header__list-item page-header__list-item--secondary">
+                    <a>Pаспродажа</a>
+                </li>
+            </ul>
+            <ul class="page-header__order">
+                <li class="page-header__order-item">Поиск по сайту
+                    <svg class="page-header__search-icon" width="18" height="18" viewbox="0 0 18 18">
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                </li>
+                <li class="page-header__order-item">Корзина: пока пуста
+                    <svg class="page-header__basket-icon" width="18" height="18" viewbox="0 0 18 18">
+                        <use xlink:href="img/sprite.svg#basket"></use>
+                    </svg>
+                </li>
+            </ul>
+            <span class="page_header__details">Бесплатная доставка по Росcии</span>
+        </div>
     </nav>
 </header>
 <main class="page-content">
     <section class="intro intro--form">
-        <h1 class="intro__header general-title">
-            Вязание на заказ
-        </h1>
+        <div class="intro__wrapper">
+            <h1 class="intro__header general-title">
+                Вязание на заказ
+            </h1>
+        </div>
     </section>
     <section class="order">
-        <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+            мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="order__body" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="order__set field-group">
-                <legend class="field-group__title">Тип</legend>
-                <div class="field-group__item">
-                    <input type="radio" name="type" value="1" id="interior">
-                    <label class="field-group__label" for="interior">Акссуар для интерьера</label>
-                </div>
-                <div class="field-group__item">
-                    <input type="radio" name="type" value="2" id="toy">
-                    <label class="field-group__label" for="toy">Детская игрушка</label>
-                </div>
-            </fieldset>
-            <fieldset class="order__set field-group">
-                <legend class="field-group__title">Цвет</legend>
-                <div class="field-group__item">
-                    <input type="checkbox" name="color" id="white">
-                    <label class="field-group__label" for="white">Белый</label>
-                </div>
-                <div class="field-group__item">
-                    <input type="checkbox" name="color" id="grey">
-                    <label class="field-group__label" for="grey">Серый</label>
-                </div>
-                <div class="field-group__item">
-                    <input type="checkbox" name="color" id="tiffany">
-                    <label class="field-group__label" for="tiffany">«Тиффани»</label>
-                </div>
-                <div class="field-group__item">
-                    <input type="checkbox" name="color" id="black">
-                    <label class="field-group__label" for="black">Черный</label>
-                </div>
-                <div class="field-group__item">
-                    <input type="checkbox" name="color" id="pink">
-                    <label class="field-group__label" for="pink">Розовый</label>
-                </div>
-                <div class="field-group__item">
-                    <input type="checkbox" name="color" id="orange">
-                    <label class="field-group__label" for="orange">Оранжевый</label>
+                <div class="field-group__fieldset-wrapper">
+                    <h2 class="field-group__title">Тип</h2>
+                    <div class="field-group__wrapper">
+                        <div class="field-group__item field-group__item--radio">
+                            <input type="radio" name="type" value="1" id="interior" checked>
+                            <label class="field-group__label field-group__label--radio" for="interior">Аксессуар для
+                                интерьера</label>
+                        </div>
+                        <div class="field-group__item field-group__item--radio">
+                            <input type="radio" name="type" value="2" id="toy">
+                            <label class="field-group__label field-group__label--radio" for="toy">Детская
+                                игрушка</label>
+                        </div>
+                    </div>
                 </div>
             </fieldset>
+            <div class="form-wrapper">
+                <fieldset class="order__set field-group field-group--checkbox">
+                    <div class="field-group__fieldset-wrapper">
+                        <h2 class="field-group__title">Цвет</h2>
+                        <div class="field-group__wrapper field-group__wrapper--checkbox">
+                            <div class="field-group__item field-group__item--checkbox">
+                                <input type="checkbox" name="color" id="white" checked>
+                                <label class="field-group__label field-group__label--checkbox" for="white">Белый</label>
+                            </div>
+                            <div class="field-group__item field-group__item--checkbox">
+                                <input type="checkbox" name="color" id="grey" checked>
+                                <label class="field-group__label field-group__label--checkbox" for="grey">Серый</label>
+                            </div>
+                            <div class="field-group__item field-group__item--checkbox">
+                                <input type="checkbox" name="color" id="tiffany">
+                                <label class="field-group__label field-group__label--checkbox"
+                                       for="tiffany">«Тиффани»</label>
+                            </div>
+                            <div class="field-group__item field-group__item--checkbox">
+                                <input type="checkbox" name="color" id="black">
+                                <label class="field-group__label field-group__label--checkbox"
+                                       for="black">Черный</label>
+                            </div>
+                            <div class="field-group__item field-group__item--checkbox">
+                                <input type="checkbox" name="color" id="pink">
+                                <label class="field-group__label field-group__label--checkbox"
+                                       for="pink">Розовый</label>
+                            </div>
+                            <div class="field-group__item field-group__item--checkbox">
+                                <input type="checkbox" name="color" id="orange">
+                                <label class="field-group__label field-group__label--checkbox"
+                                       for="orange">Оранжевый</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
             <fieldset class="order__set field-group">
-                <legend class="field-group__title">ФИО</legend>
-                <div class="field-group__item">
-                    <label class="field-group__label field-group__label--name" for="first-name">Имя</label>
-                    <input type="text" name="name" id="first-name" placeholder="Введите ваше имя">
-                </div>
-                <div class="field-group__item">
-                    <label  class="field-group__label field-group__label--name" for="last-name">Фамилия:</label>
-                    <input type="text" name="name" id="last-name" placeholder="Укажите фамилию">
-                </div>
-                <div class="field-group__item">
-                    <label class="field-group__label field-group__label--name" for="middle-name">Отчество:</label>
-                    <input type="text" name="name" id="middle-name" placeholder="Отчество, если желаете">
+                <div class="field-group__fieldset-wrapper">
+                    <h2 class="field-group__title">ФИО</h2>
+                    <div class="field-group__wrapper">
+                        <div class="field-group__item field-group__item--name">
+                            <label class="field-group__label field-group__label--name" for="first-name">Имя</label>
+                            <input type="text" name="name" id="first-name" placeholder="Введите ваше имя&#42">
+                        </div>
+                        <div class="field-group__item field-group__item--name">
+                            <label class="field-group__label field-group__label--name" for="last-name">Фамилия:</label>
+                            <input type="text" name="name" id="last-name" placeholder="Укажите фамилию&#42">
+                        </div>
+                        <div class="field-group__item field-group__item--name">
+                            <label class="field-group__label field-group__label--name"
+                                   for="middle-name">Отчество:</label>
+                            <input type="text" name="name" id="middle-name" placeholder="Отчество, если желаете">
+                        </div>
+                    </div>
                 </div>
             </fieldset>
+            <div class="form-wrapper">
+                <fieldset class="order__set field-group field-group--phone">
+                    <div class="field-group__fieldset-wrapper">
+                        <h2 class="field-group__title field-group__title--phone">Тел</h2>
+                        <div class="field-group__wrapper">
+                            <div class="field-group__item field-group__item--phone">
+                                <input type="text" name="phone" id="phone" placeholder="+7 XXX XX XX&#42">
+                                <svg role="presentation" class="field-group__phone-icon" viewBox="0 0 24.8 24.3"
+                                     width="24.8" height="24.3">
+                                    <use xlink:href="img/sprite.svg#phone"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="order__set field-group field-group--mail">
+                    <div class="field-group__fieldset-wrapper">
+                        <h2 class="field-group__title field-group__title--mail">E-mail</h2>
+                        <div class="field-group__wrapper">
+                            <div class="field-group__item field-group__item--mail">
+                                <input type="text" name="email" id="email" placeholder="Ваш Email&#42">
+                                <svg role="presentation" class="field-group__mail-icon" viewBox="0 0 32 32" width="32"
+                                     height="32">
+                                    <use xlink:href="img/sprite.svg#mail"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
             <fieldset class="order__set field-group">
-                <legend class="field-group__title">Тел</legend>
-                <div class="field-group__item">
-                    <input type="text" name="phone" id="phone" placeholder="+7 XXX XX XX">
-                </div>
-            </fieldset>
-            <fieldset class="order__set field-group">
-                <legend class="field-group__title">E-mail</legend>
-                <div class="field-group__item">
-                    <input type="text" name="email" id="email" placeholder="Ваш Email">
-                </div>
-            </fieldset>
-            <fieldset class="order__set field-group">
-                <legend class="field-group__title">Доп</legend>
-                <div class="field-group__item">
-                    <textarea name="details" placeholder="Опишите все ваши пожелания к заказу" rows="10">
-                    </textarea>
+                <div class="field-group__fieldset-wrapper">
+                    <h2 class="field-group__title">Доп</h2>
+                    <div class="field-group__wrapper">
+                        <div class="field-group__item field-group__item--details">
+                            <textarea name="details" placeholder="Опишите все ваши пожелания к заказу"
+                                      rows="7"></textarea>
+                        </div>
+                    </div>
                 </div>
             </fieldset>
             <div class="order__wrapper">
-                <button type="submit" class="order__button general-button">
-                    Отправить заказ
-                </button>
                 <span>
                     <sup>*</sup>Поля обязательные для заполнения
                 </span>
+                <button type="submit" class="order__button general-button">
+                    Отправить заказ
+                </button>
             </div>
         </form>
     </section>
 </main>
-<footer class="page-footer">
-    <div class="page-footer__logo">
-        <img src="#" alt="Мишка">
-    </div>
-    <ul class="page-footer__socials">
-        <li>Instagram</li>
-        <li>Facebook</li>
-        <li>Twitter</li>
-    </ul>
-    <div class="page-footer__developer">
-        <span>Разаработано</span>
-        <img src="#" alt="academy-logo">
+<footer class="footer">
+    <div class="page-footer">
+        <div class="page-footer__logo">
+            <svg class="page-footer__logo-icon" width="101.6" height="34" viewBox="0 0 101.615 34.056">
+                <use xlink:href="img/sprite.svg#footer-logo" role="img"></use>
+            </svg>
+        </div>
+        <ul class="page-footer__socials">
+            <li class="page-footer__icon">Instagram
+                <svg class="page-footer__social-icon" viewBox="0 0 21.77 21.33" width="21.77" height="21.33">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+            </li>
+            <li class="page-footer__icon">Facebook
+                <svg class="page-footer__social-icon" viewBox="0 0 14.96 27.72" width="14.96" height="27.72">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+            </li>
+            <li class="page-footer__icon">Twitter
+                <svg class="page-footer__social-icon" viewBox="0 0 23.49 20.17" width="23.49" height="20.17">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+            </li>
+        </ul>
+        <p class="page-footer__developer">
+            <span>Разработано</span>
+            <svg class="page-footer__developer-logo">
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+        </p>
     </div>
 </footer>
+<script src="js/scripts.min.js" type="text/javascript"></script>
 </body>
 </html>

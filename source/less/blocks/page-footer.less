@@ -1,0 +1,144 @@
+.page-footer {
+  .wrapper();
+
+  background-color: #f1f1f1;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__logo-icon {
+  cursor: pointer;
+}
+
+.page-footer__socials {
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+
+  margin: 0;
+  padding: 22px 0 27px 0;
+
+  list-style: none;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  font-size: 0px;
+
+}
+
+.page-footer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.page-footer__icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.page-footer__icon:hover,
+.page-footer__logo-icon:hover {
+  color: #46c1ae;
+}
+
+.page-footer__icon:active,
+.page-footer__logo-icon:active {
+  opacity: 0.3;
+  color: #46c1ae;
+}
+
+.page-footer__logo-icon:active
+
+.page-footer__icon:last-child{
+  margin-right: 0px;
+}
+
+.page-footer__developer {
+  margin: 0px;
+  padding: 15px 0;
+
+  text-align: center;
+
+}
+
+.page-footer__developer span{
+  display: inline-block;
+
+  padding-right: 10px;
+
+  vertical-align: middle;
+
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.page-footer__developer-logo {
+  display: inline-block;
+
+  width: 44px;
+  height: 56px;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  color: #63d1bb;
+}
+
+.page-footer__developer-logo:hover {
+  color: #46c1ae;
+}
+
+.page-footer__developer-logo:active {
+  opacity: 0.3;
+  color: #46c1ae;
+}
+
+@media (min-width: @tablet) {
+  .page-footer {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+
+    padding-top: 40px;
+    padding-bottom: 22px;
+
+    background-color: #f1f1f1;
+  }
+
+  .page-footer__logo {
+    display: block;
+    align-self: center;
+
+    width: 33%;
+
+    color: black;
+  }
+
+
+  .page-footer__socials{
+    width: 33%;
+
+    border: 0px;
+  }
+
+  .page-footer__developer {
+    align-self: center;
+
+    width: 33%;
+    padding: 0;
+
+    text-align: right;
+  }
+
+}
