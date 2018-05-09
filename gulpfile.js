@@ -47,7 +47,7 @@ gulp.task("serve", function () {
 });
 
 gulp.task("images", function () {
-    return gulp.src("source/img/**/*.{png,jpg,svg}")
+    return gulp.src("source/img/*.{png,jpg,svg}")
         .pipe(imagemin([
             imagemin.optipng({optimisationLevel: 3}),
             imagemin.jpegtran({progressive: true}),
@@ -85,7 +85,6 @@ gulp.task("html", function () {
 gulp.task("jsmin", function () {
     return gulp.src("source/js/*.js")
         .pipe(jsmin())
-        .pipe(rename("scripts.min.js"))
         .pipe(gulp.dest("build/js"))
         .pipe(server.stream());
 });
