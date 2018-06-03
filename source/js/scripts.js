@@ -5,6 +5,7 @@
     var popUpBtn = document.querySelector('.page-features__button');
     var BasketsCatalog = document.querySelectorAll('.product-card__basket-icon');
     var map = document.querySelector('.page-contacts__image');
+    var form = document.querySelector('.order__body');
 
     navList.classList.add('page-header__nav--js');
 
@@ -33,5 +34,32 @@
             item.addEventListener('click', function () {
                 popUp.classList.add('pop-up--open');
             });
+        })
+    }
+
+    function signUp (formObj) {
+        var config = {
+            apiKey: "AIzaSyCnonepIvEoUsdNMR2Vx1hTT7kRLclSono",
+            authDomain: "empirical-vial-203519.firebaseapp.com",
+            databaseURL: "https://empirical-vial-203519.firebaseio.com",
+            projectId: "empirical-vial-203519",
+            storageBucket: "empirical-vial-203519.appspot.com",
+            messagingSenderId: "62726786832"
+        };
+        firebase.initializeApp(config);
+
+        var mailsRef = firebase.database().ref('emails');
+        var newMailRef = mailsRef.push();
+        newMailRef.set({
+            mail: formObj.email.value,
+            test: 'test'
+        });
+
+    }
+
+    if (form) {
+        form.addEventListener('submit', function (evt) {
+            evt.preventDefault();
+            return signUp(this);
         })
     }
