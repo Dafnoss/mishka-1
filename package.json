@@ -43,5 +43,9 @@
   "editorconfig-cli": [
     "*.json",
     "source/*.html"
-  ]
+  ],
+  "dependencies": {
+    "firebase-admin": "^6.4.0",
+    "firebase-functions": "^2.1.0"
+  }
 }
