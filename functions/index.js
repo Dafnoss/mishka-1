@@ -3,8 +3,8 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
-const gmailEmail = 'alexey.komkov.101@gmail.com';
-const gmailPassword = 'Alpixx92mad423!';
+const gmailEmail = functions.config().gmail.login;
+const gmailPassword = functions.config().gmail.pass;
 
 admin.initializeApp();
 

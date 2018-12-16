@@ -46,7 +46,10 @@
             storageBucket: "empirical-vial-203519.appspot.com",
             messagingSenderId: "62726786832"
         };
-        firebase.initializeApp(config);
+
+        if (!firebase.apps.length) {
+            firebase.initializeApp(config);
+        }
 
         var mailsRef = firebase.database().ref('emails');
         var newMailRef = mailsRef.push();
